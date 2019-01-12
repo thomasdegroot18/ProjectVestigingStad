@@ -1,4 +1,15 @@
-p {
-  color: blue;
-  font-size: 55px;
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
 }
