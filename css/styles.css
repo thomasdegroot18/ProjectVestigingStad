@@ -29,7 +29,7 @@ header .row {
 header .headerImage {
 	display: flex;
 	background-color: mistyrose;
-	background-image: url("../imgs/background.png");
+	background-image: url("../imgs/background.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -49,6 +49,7 @@ header	{
 h1 {
 	text-align: center;
 }
+
 
 footer {
 	padding-top: 20px;
