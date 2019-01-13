@@ -5,11 +5,11 @@ header p {
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
 }
 
-header .row,
-footer .row {
+header .row {
   display: flex;
-  align-items: center;
 }
