@@ -1,15 +1,36 @@
 header p {
   padding: 0 20px;
   margin: 0;
+  font-size: 2.5vmin;
+  color: white;
+  font-size: bold;
 }
 
 header nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
   align-content: center;
 }
 
+
 header .row {
   display: flex;
+}
+
+header .headerImage {
+	display: flex;
+	background-color: black;
+	justify-content: center;
+	color: white;
+	margin-bottom: 0;
+}
+
+header	{
+	background-color: firebrick;
+}
+
+h1 {
+	text-align: center;
 }
