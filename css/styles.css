@@ -28,7 +28,7 @@ header .row {
 
 header .headerImage {
 	display: flex;
-	background-color: firebrick;
+	background-color: mistyrose;
 	background-image: url("../imgs/background.png");
 	background-repeat: no-repeat;
 	background-position: center;
