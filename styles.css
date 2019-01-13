@@ -3,7 +3,7 @@ header p {
   margin: 0;
   font-size: 2.5vmin;
   color: white;
-  font-size: bold;
+  font-size: bolder;
 }
 
 header nav {
@@ -14,6 +14,13 @@ header nav {
   align-content: center;
 }
 
+header a {
+	color: white;
+}
+
+header a:hover {
+color: white;
+}
 
 header .row {
   display: flex;
@@ -21,10 +28,18 @@ header .row {
 
 header .headerImage {
 	display: flex;
-	background-color: black;
+	background-color: mistyrose;
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	justify-content: center;
 	color: white;
 	margin-bottom: 0;
+}
+
+header h1{
+	font-weight: 1000;
 }
 
 header	{
@@ -33,4 +48,34 @@ header	{
 
 h1 {
 	text-align: center;
+}
+
+footer {
+	padding-top: 20px;
+	background-color: mistyrose;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.credits {
+	font-size: xx-small;
+}
+
+footer .row {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+footer a {
+	height:10px;
+}
+
+.MainContainer {
+background-color: mistyrose;
 }
