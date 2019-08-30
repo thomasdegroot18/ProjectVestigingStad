@@ -5,7 +5,7 @@
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/combine.css">
 </head>
-<body onload="dayOrNight()">
+<body onload="dayOrNight()" class="body">
   <div class="container" id="container">
     <div class="header" id="header">
       <div class="amsterdam"><p id="p"> Amsterdam by <br/> </p> </div>
@@ -19,12 +19,22 @@
       </div>
     </div>
     <div class="navbar" id="navbar">
-      <ul>
-        <li class = "logo" id = "logo"> blob </li>
-        <li> index </li>
-        <li> blieb </li>
-        <li> bloeb </li>
-      </ul>
+      <div class="navcontainer" id="navcontainer">
+        <ul>
+          <li class = "logo" id = "logo">
+            <div class="daynight">
+              <div class="container2">
+                <div class = "toggle-btn" id="toggle-btn" onclick='myFunction()'>
+                  <div class = "inner-circle"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li> index </li>
+          <li> blieb </li>
+          <li> bloeb </li>
+        </ul>
+    </div>
     </div>
     <div class="main" id="main">
       <p id="riseandset"> Bla </p>
