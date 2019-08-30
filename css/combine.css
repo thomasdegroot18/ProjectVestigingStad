@@ -18,9 +18,19 @@ body {
 .header {
   width: 100%;
   min-height: 50px;
-  background-color: blue;
   box-sizing: border-box;
   border: solid 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.night .header {
+  background-image: url("../imgs/skyline_black_blue_small.png");
+}
+
+.day .header {
+  background-image: url("../imgs/skyline_white_red_small.png");
 }
 
 .navbar {
@@ -120,7 +130,7 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
 }
 
 li {
