@@ -1,31 +1,23 @@
+//Overview of function that gets activated at certain actions of the page
 window.addEventListener("load", sizePage);
 window.addEventListener("resize", sizePage);
 window.addEventListener("scroll", fixNav);
 
-// Sizing the element on the page
+// Function for sizing the main containers (header, navbar, footer en main)
 function sizePage() {
-
-console.log("Its working!");
-
-var heightOfWindow = window.innerHeight;
-
-// Sizing header 20%
-var heightOfHeader = heightOfWindow / 5;
-document.getElementById("header").style.height = heightOfHeader + "px";
-
-// sizing Navbar 10%
-var heightOfNavbar = heightOfWindow * 0.1;
-document.getElementById("navbar").style.height = heightOfNavbar + "px";
-
-// sizing footer 10%
-var heightOfFooter = heightOfWindow * 0.1;
-document.getElementById("footer").style.height = heightOfNavbar + "px";
-
-/* sizing min-height property of main so when content is less than rest of page,
-otherwise height auto will take over */
-var minHeightOfmain  = heightOfWindow - (heightOfHeader + heightOfNavbar + heightOfFooter);
-document.getElementById("main").style.minHeight = minHeightOfmain + "px";
-
+  //Getting the height of the window and use it to define the other heights.
+  var heightOfWindow = window.innerHeight;
+  var heightOfHeader = heightOfWindow / 5;
+  var heightOfNavbar = heightOfWindow * 0.1;
+  var heightOfFooter = heightOfWindow * 0.1;
+  /* sizing min-height property of main so when content is less than rest of page,
+  otherwise height auto will take over */
+  var minHeightOfmain  = heightOfWindow - (heightOfHeader + heightOfNavbar + heightOfFooter);
+  // Return the height to elements
+  document.getElementById("header").style.height = heightOfHeader + "px";
+  document.getElementById("navbar").style.height = heightOfNavbar + "px";
+  document.getElementById("footer").style.height = heightOfNavbar + "px";
+  document.getElementById("main").style.minHeight = minHeightOfmain + "px";
 }
 
     const main = document.getElementById("main");
@@ -96,6 +88,7 @@ function fixNav() {
     var current = new Date();
     document.getElementById("riseandset").innerHTML = "Sunset:" + sunset + "Sunrise: " + sunrise;
     document.getElementById("current").innerHTML = "Current:" + current;
+    var url = "url('../imgs/skyline_black_blue_small.png')";
 
 
     if(isNightTime) {
@@ -105,6 +98,9 @@ function fixNav() {
       document.getElementById("riseandset").style.color = "white";
       document.getElementById("current").style.color = "white";
       document.getElementById("toggle-btn").classList.add("active");
+      document.body.classList.remove('day');
+      document.body.classList.add('night');
+
     }
     else {
       isNightTime = true;
@@ -113,6 +109,8 @@ function fixNav() {
       document.getElementById("riseandset").style.color = "black";
       document.getElementById("current").style.color = "black";
       document.getElementById("toggle-btn").classList.remove("active");
+      document.body.classList.remove('night');
+      document.body.classList.add('day');
     }
 
   }
