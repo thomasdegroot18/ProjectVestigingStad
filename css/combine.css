@@ -82,7 +82,8 @@ div.container2 {
 }
 
 .toggle-btn.active {
-  background: #00acee;
+  background: #15f4ee;
+  box-shadow: 0 0 10px #15f4ee;
 }
 
 .toggle-btn.active > .inner-circle {
@@ -97,6 +98,7 @@ div.amsterdam {
   margin-right: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  padding-top: 20px;
 }
 
 div.daynight {
@@ -155,6 +157,10 @@ p {
   text-align: left;
 }
 
+.fixednav div#navbar {
+  position: fixed;
+  top: 0px;
+}
 
 /* Styling for day */
 
@@ -183,17 +189,39 @@ body.night {
 
 .night .header {
   background-image: url("../imgs/skyline_black_blue_small.png");
-  background-color: black;
+  background-color: rgb(4,13, 14);
 }
 
-.night .navbar, .night .footer {
+.night .navbar {
   background-color: #15f4ee;
+  box-shadow: 0 0 5px 5px #15f4ee;
+  position: relative;
+  z-index: 1;
+}
+
+.night .footer {
+  background-color: rgb(4,13, 14);
+  box-shadow: 0 0 5px 5px rgb(4,13, 14);
 }
 
 .night .main {
-  background-color: black;
+  background-color: rgb(4,13, 14);
   color: #15f4ee;
+  box-shadow: 0 6px 5px 5px rgb(4,13, 14);
 }
 
+.night #toggle-btn2 {
+  box-shadow: 0 0 5px black;
+  background-color: rgb(4,13, 14);
+}
+
+.night #innercircle2 {
+    background-image: url("../imgs/moon_blue.jpg");
+}
+
+.night .amsterdam {
+  color: #15f4ee;
+  text-shadow: 0 0 5px #15f4ee;
+}
 
 /* neon-roze hex:  ff1493;*/

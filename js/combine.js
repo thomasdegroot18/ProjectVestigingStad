@@ -75,18 +75,14 @@ https://github.com/Triggertrap/sun-js */
 function nightSwitch() {
   if(isNightTime) {
     isNightTime = false;
-      document.getElementById("p").style.color = "white";
-      document.getElementById("riseandset").style.color = "white";
-      document.getElementById("current").style.color = "white";
       document.getElementById("toggle-btn").classList.add("active");
+      document.getElementById("toggle-btn2").classList.add("active");
       document.body.classList.remove('day');
       document.body.classList.add('night');
   } else {
       isNightTime = true;
-      document.getElementById("p").style.color = "black";
-      document.getElementById("riseandset").style.color = "black";
-      document.getElementById("current").style.color = "black";
       document.getElementById("toggle-btn").classList.remove("active");
+      document.getElementById("toggle-btn2").classList.remove("active");
       document.body.classList.remove('night');
       document.body.classList.add('day');
     }
