@@ -30,7 +30,7 @@ body {
 }
 
 .main {
-  max-width: 1400px;
+  max-width: 1200px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -177,17 +177,23 @@ body.day {
 /* Styling for night */
 
 body.night {
-  background: black;
+  background: url("../imgs/night_background3.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 .night .header {
   background-image: url("../imgs/skyline_black_blue_small.png");
+  background-color: black;
 }
 
 .night .navbar, .night .footer {
-  background-color: #53c4d0;
+  background-color: #15f4ee;
 }
 
 .night .main {
-  background-color: #ff1493;
+  background-color: black;
+  color: #15f4ee;
 }
+
+
+/* neon-roze hex:  ff1493;*/
