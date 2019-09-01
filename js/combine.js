@@ -3,6 +3,13 @@ window.addEventListener("load", sizePage);
 window.addEventListener("resize", sizePage);
 window.addEventListener("scroll", fixNav);
 
+//loading new pages
+
+function load_page(name)  {
+  // document.getElementById("main").innerHTML='<iframe src="'+name+'.html" seamless></iframe>'
+  document.getElementById("main").innerHTML='<div w3-include-html="'+name+'.html"></div>';
+}
+
 // Function for sizing the main containers (header, navbar, footer en main)
 function sizePage() {
   //Getting the height of the window and use it to define the other heights.
@@ -18,7 +25,6 @@ function sizePage() {
   document.getElementById("navbar").style.height = heightOfNavbar + "px";
   document.getElementById("footer").style.height = heightOfNavbar + "px";
   document.getElementById("main").style.minHeight = minHeightOfmain + "px";
-  document.getElementById("navcontainer").style.minHeight = minHeightOfmain + "px";
   document.getElementById("navlist").style.height = heightOfNavbar + "px";
 }
 
