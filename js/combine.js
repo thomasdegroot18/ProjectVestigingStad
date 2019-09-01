@@ -19,6 +19,7 @@ function sizePage() {
   document.getElementById("footer").style.height = heightOfNavbar + "px";
   document.getElementById("main").style.minHeight = minHeightOfmain + "px";
   document.getElementById("navcontainer").style.minHeight = minHeightOfmain + "px";
+  document.getElementById("navlist").style.height = heightOfNavbar + "px";
 }
 
   /* determine the current padding-top of main for function fixNav, so padding

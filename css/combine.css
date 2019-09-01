@@ -151,10 +151,48 @@ li.house {
   color: white;
 }
 
+li.info {
+  position: relative;
+}
+
+ul.information {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: black;
+  color: white;
+  transition: 0.5s;
+  z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 20px;
+}
+
+.info:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.night .navbar li:hover {
+  background: black;
+  color: white;
+}
+
+body.night .info li:hover {
+  background: #15f4ee;
+}
+
 /* inside main elements */
 
-p  {
+p.navbar  {
   font-size: 20px;
+}
+
+p{
+  font-size: 16px;
 }
 
 /* inside footer*/
