@@ -5,10 +5,16 @@ window.addEventListener("scroll", fixNav);
 
 //loading new pages
 
-function load_page(name)  {
-  // document.getElementById("main").innerHTML='<iframe src="'+name+'.html" seamless></iframe>'
-  document.getElementById("main").innerHTML='<div w3-include-html="'+name+'.html"></div>';
-}
+function load_page(name) {
+        const page = name + ".html";
+        const type = '"text/html"';
+        var heightmain = '"400"';
+        const total = "<object type=" + type + " data=" + page + " height=" + heightmain + "></object>";
+        document.getElementById("main").innerHTML = total;
+        console.log(page);
+        console.log(total);
+        console.log(name);
+      }
 
 // Function for sizing the main containers (header, navbar, footer en main)
 function sizePage() {
