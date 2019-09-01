@@ -288,4 +288,16 @@ body.night {
   text-shadow: 0 0 5px #15f4ee;
 }
 
+body.day > body .loadedPage {
+  background-color: rgb(4,13, 14);
+  height: 100%;
+  color:  #15f4ee;
+}
+
+body.night > body .loadedPage {
+  background-color: #ffb3b3;
+  height: 100%;
+  color:  black;
+}
+
 /* neon-roze hex:  ff1493;*/
