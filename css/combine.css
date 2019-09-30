@@ -102,6 +102,13 @@ div.daynight {
   margin-top: 5px;
 }
 
+.title {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 50px;
+}
+
 /* inside navbar elements */
 
 ul {
@@ -236,6 +243,10 @@ body.day {
   background-image: url("../imgs/skyline_white_red_small.png");
 }
 
+.day .title {
+  color: #c84537;
+}
+
 .day .navbar, .day .footer {
   background-color: #c84537;
 }
@@ -253,6 +264,11 @@ body.night {
 
 .night .header {
   background-image: url("../imgs/skyline_black_blue_small.png");
+  background-color: rgb(4,13, 14);
+}
+
+.night .title {
+  color: #15f4ee;
   background-color: rgb(4,13, 14);
 }
 
