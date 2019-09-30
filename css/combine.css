@@ -117,45 +117,30 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-  justify-content: center;
-  height: 100%;
+  height: inherit;
 }
 
 li {
+  display: flex;
   flex: 1;
-  text-align: center;
-  align-self: center;
   text-transform: uppercase;
   font-weight: 900;
+  min-height: 50px;
+  height: inherit;
+  width: inherit;
+  justify-content: center;
 }
+
+#home, #information, #registration, #volunteer, #merchandise {
+  align-self: center;
+}
+
+
 
 li.logo {
   display: none;
   justify-content: flex-start;
-}
-
-li.house {
-  height: 100%;
-  display: inline-flex;
-  flex: none;
-  justify-content: center;
-}
-
-#house {
-  background-image: url("../imgs/house.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 80px;
-  position: relative;
-}
-
-#home {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%,-50%);
-  color: white;
+  padding-left: 30px;
 }
 
 li.info {
@@ -189,7 +174,7 @@ body.night .navbar li:hover {
 }
 
 body.night .info li:hover {
-  background: #15f4ee;
+  background: #9D72FF;
 }
 
 /* inside main elements */
@@ -297,12 +282,13 @@ body.night {
 
 .night .title {
   color: #15f4ee;
-  text-shadow: 0 0 20px #15f4ee;
+  text-shadow: 0 0 30px #15f4ee;
   background-color: rgb(4,13, 14);
 }
 
 .night h1 {
-  text-shadow: 0 0 10px #15f4ee;
+  color: rgb(7, 33, 180);
+  text-shadow: 0 0 10px rgb(7, 33, 180);
 }
 
 .night p {
@@ -310,8 +296,8 @@ body.night {
 }
 
 .night .navbar {
-  background-color: #15f4ee;
-  box-shadow: 0 0 5px 5px #15f4ee;
+  background-color: rgb(7, 33, 180);
+  box-shadow: 0 0 5px 5px rgb(7, 33, 180);
   position: relative;
   z-index: 1;
 }
@@ -353,4 +339,13 @@ body.night > body .loadedPage {
   color:  black;
 }
 
-/* neon-roze hex:  ff1493;*/
+/* active page */
+.night .current {
+  background-color: #15f4ee;
+  box-shadow: 0 0 7px 7px #15f4ee;
+}
+
+/* neon-roze hex:  ff1493;
+neon donker blauw: rgb(7, 33, 180);
+neon groen: #00ff80;
+*/
