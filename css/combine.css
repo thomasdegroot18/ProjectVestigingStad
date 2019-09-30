@@ -209,19 +209,25 @@ h1 {
 }
 
 div.photocontainer {
-  border: solid white;
-  width: 32%;
-  height: 100px;
+  width: 33.3%;
+  height: 200px;
   float: left;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 15px 0;
+}
+
+div.photo2 {
+  background-image: url("../imgs/blacklight_makeup.jpg");
 }
 
 div.photo1 {
-  background-image: url("../imgs/blacklight_makeup");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32%;
-  height: 100px;
-  border: solid white;
+  background-image: url("../imgs/blacklight.jpg");
+}
+
+div.photo3 {
+  background-image: url("../imgs/heart.jpg");
 }
 
 /* inside footer*/
