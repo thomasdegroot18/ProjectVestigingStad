@@ -297,7 +297,16 @@ body.night {
 
 .night .title {
   color: #15f4ee;
+  text-shadow: 0 0 20px #15f4ee;
   background-color: rgb(4,13, 14);
+}
+
+.night h1 {
+  text-shadow: 0 0 10px #15f4ee;
+}
+
+.night p {
+  text-shadow: 0 0 4px #15f4ee;
 }
 
 .night .navbar {
