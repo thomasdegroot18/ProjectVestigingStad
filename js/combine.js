@@ -102,6 +102,12 @@ function nightSwitch() {
 
   }
 
+function myEnterFunction() {
+  var navBtnSize = document.getElementById("information").offsetWidth;
+  console.log(navBtnSize);
+  document.getElementsByClassName('dropdown').style.width = navBtnSize + "px";
+}
+
 /* Sun.js code from Triggertrap, original code on:
 https://github.com/Triggertrap/sun-js*/
 

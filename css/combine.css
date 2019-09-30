@@ -133,9 +133,9 @@ li {
 
 #home, #information, #registration, #volunteer, #merchandise {
   align-self: center;
+  width: 100%;
+  text-align: center;
 }
-
-
 
 li.logo {
   display: none;
@@ -144,37 +144,31 @@ li.logo {
 }
 
 li.info {
-  position: relative;
+  height: auto;
 }
 
 ul.information {
-  position: absolute;
-  left: 0;
-  top: 22px;
-  display: block;
-  width: 100%;
-  height: auto;
-  background: black;
+  width: inherit;
+  height: contain;
+  background: rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
   transition: 0.5s;
   z-index: 12;
-  opacity: 0;
-  visibility: hidden;
-  padding-top: 20px;
+  display: none;
+  position: relative;
+}
+
+li.dropdown {
+  min-height: 5px;
+  height: contain;
+  padding: 5px 0;
 }
 
 .info:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-
-body.night .navbar li:hover {
-  background: black;
-  color: white;
-}
-
-body.night .info li:hover {
-  background: #9D72FF;
+  top: 0;
+  display: block;
+  position: absolute;
 }
 
 /* inside main elements */
@@ -339,10 +333,23 @@ body.night > body .loadedPage {
   color:  black;
 }
 
+/* navbar hover */
+
+body.night .navbar li:hover {
+  background: rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  color: white;
+}
+
+body.night .info li:hover {
+  background: #15f4ee;
+  box-shadow: 0 0 3px 3px #15f4ee;
+}
+
 /* active page */
 .night .current {
   background-color: #15f4ee;
-  box-shadow: 0 0 7px 7px #15f4ee;
+  box-shadow: 0 0 3px 3px #15f4ee;
 }
 
 /* neon-roze hex:  ff1493;
