@@ -27,6 +27,7 @@ body {
   min-height: 50px;
   width: 100%;
   box-sizing: border-box;
+  margin: auto 0;
 }
 
 .main {
@@ -115,20 +116,16 @@ ul {
   list-style-type: none;
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  height: inherit;
+  overflow: hidden;
 }
 
 li {
-  display: flex;
   flex: 1;
   text-transform: uppercase;
   font-weight: 900;
   min-height: 50px;
-  height: inherit;
-  width: inherit;
-  justify-content: center;
 }
 
 #home, #information, #registration, #volunteer, #merchandise {
@@ -137,39 +134,43 @@ li {
   text-align: center;
 }
 
+li a, .dropbtn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 li.logo {
   display: none;
   justify-content: flex-start;
   padding-left: 30px;
 }
 
-li.info {
-  height: auto;
-}
-
-ul.information {
-  width: inherit;
-  height: contain;
+.dropdown-content {
   background: rgb(4,13, 14);
   box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
   transition: 0.5s;
   z-index: 12;
   display: none;
-  position: relative;
+  position: absolute;
 }
 
 li.dropdown {
-  min-height: 5px;
-  height: contain;
+  display: inline-block;
   padding: 5px 0;
 }
 
-.info:hover ul {
-  top: 0;
+.dropdown-content a{
   display: block;
-  position: absolute;
 }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* inside main elements */
 
@@ -292,8 +293,7 @@ body.night {
 .night .navbar {
   background-color: #0310EA;
   box-shadow: 0 0 5px 5px #0310EA;
-  position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 
 .night .footer {
@@ -321,21 +321,9 @@ body.night {
   text-shadow: 0 0 5px #15f4ee;
 }
 
-body.day > body .loadedPage {
-  background-color: rgb(4,13, 14);
-  height: 100%;
-  color:  #15f4ee;
-}
-
-body.night > body .loadedPage {
-  background-color: #ffb3b3;
-  height: 100%;
-  color:  black;
-}
-
 /* navbar hover */
 
-body.night .navbar li:hover {
+.navbar li:hover {
   background: rgb(4,13, 14);
   box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
