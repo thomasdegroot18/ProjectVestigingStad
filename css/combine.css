@@ -290,8 +290,8 @@ body.night {
 }
 
 .night .navbar {
-  background-color: rgb(7, 33, 180);
-  box-shadow: 0 0 5px 5px rgb(7, 33, 180);
+  background-color: #0310EA;
+  box-shadow: 0 0 5px 5px #0310EA;
   position: relative;
   z-index: 1;
 }
@@ -348,8 +348,9 @@ body.night .info li:hover {
 
 /* active page */
 .night .current {
-  background-color: #15f4ee;
-  box-shadow: 0 0 3px 3px #15f4ee;
+  background-color: rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  color: white;
 }
 
 /* neon-roze hex:  ff1493;
