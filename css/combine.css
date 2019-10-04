@@ -111,6 +111,14 @@ div.daynight {
 
 /* inside navbar elements */
 
+.dropdown-content a:visited {
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
 ul {
   list-style-type: none;
   display: flex;
@@ -334,6 +342,10 @@ body.night {
 .navbar li:hover {
   background: rgb(4,13, 14);
   box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  color: white;
+}
+
+.navbar li:hover a {
   color: white;
 }
 
