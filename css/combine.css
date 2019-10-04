@@ -354,6 +354,14 @@ body.night .info li:hover {
   box-shadow: 0 0 3px 3px #15f4ee;
 }
 
+.navbar a {
+  color: black;
+}
+
+.current a{
+  color: white;
+}
+
 /* active page */
 .night .current {
   background-color: rgb(4,13, 14);
