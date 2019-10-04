@@ -1,12 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="css/combine.css">
+    <title>ETDS Template</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/combine.css">
 </head>
 <body onload="dayOrNight()" class="body">
-  <div class="loadedPage" id="loadedPage">
-        <h1>Tournament</h1>
-        <p>
-           Hier komt some text over het tournament.
-        </p>
+  <div class="container" id="container">
+    <div class="header" id="header">
+      <div class="amsterdam"><p id="amsterdam"> Amsterdam by <br/> </p> </div>
+
+      <div class="daynight">
+        <div class="container2">
+          <div class = "toggle-btn" id="toggle-btn" onclick='nightSwitch()'>
+            <div class = "inner-circle"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/newpage.js"></script>
+    <p class="title"> ETDS AMSTERDAM 2020 </p>
+    <div class="navbar" id="navbar">
+        <ul clas="navlist" id="navlist">
+          <li class = "logo" id = "logo">
+              <div class="container2" id="btn-nav">
+                <div class = "toggle-btn" id="toggle-btn2" onclick='nightSwitch()'>
+                  <div class = "inner-circle" id="innercircle2"></div>
+              </div>
+            </div>
+          </li>
+          <li class = "house"> <div id="home"><a href="index.html">Home </a></div> </li>
+          <li class = "dropdown current" onmouseenter="myEnterFunction()"> <a class="dropbtn">Information <a>
+            <div class="dropdown-content">
+              <a>Tournament</a>
+              <a href="location.html">Location</a>
+              <a>Time-table</a>
+              <a>FAQ</a>
+          </div>
+          </li>
+          <li> <div id="registration"> <a href="registration.html"> Registration </a> </div></li>
+          <li> <div id="volunteer">Volunteer </div></li>
+          <li> <div id="merchandise">Merchandise </div></li>
+        </ul>
+    </div>
+  <div class="main" id="main">
+    <h1>ETDS</h1>
+      <p> The ETDS also known as the <b>E</b>uropean <b>T</b>ournament for
+      <b>D</b>ancing <b>S</b>tudents is a large ballroom dancing tournament
+      attracting hunderds of dancers from Europe. The tournament is hosted
+      twice a year since 1989. This time the ETDS will compete for 'Der Maus'
+      in Amsterdam. <br/><br/>
+      All dancers can compete in the tournament, which is spread over two days.
+      For each dancer there are two competitions to join, standard and latin.
+      The standard dances consisting out of English Waltz, Tango, Quickstep,
+      and for higher levels Slow Foxtrot and and Viennise Waltz. The Latin
+      dances consist out of Chachacha, Rumba, Jive, and for higher levels,
+      Samba and Paso doble. <br/><br/>
+      This tournament is not only about competing. The are an multitude of fun
+      activities planned, and two great parties. <br/><br/>
+      </p>
+      <h1> Classes </h1>
+      <p> There are two main classes: Breitensport and CloseD/Open. If your are a
+      recreational dancer (non-competion) or beginner you're in Breitensport.
+      If you dance competitions, it will be depending on your competition level.
+      Check the overview at the bottom of the page. </p>
+      <h1> Breitensport </h1>
+      <p> This class contains subclasses (in ascending level): Amateurs, Professionals,
+      Masters and Champions. <br/>
+      There will be a qualification round with all Breitersport dancers, to determine in which level you will continue
+      the competition. </p>
+      <h1> Breitersport or ClosedD/Open? </h1>
+      <p> Information is comming soon. </p>
+
+
+
+  </div>
+  <div class="footer" id="footer"> </div>
+  </div>
+  <script src="js/combine.js"></script>
 </body>
+
+</html>
