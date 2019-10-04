@@ -27,7 +27,6 @@ body {
   min-height: 50px;
   width: 100%;
   box-sizing: border-box;
-  margin: auto 0;
 }
 
 .main {
@@ -188,6 +187,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  padding: 20px 30px;
+}
+
 div.photocontainer {
   width: 33.3%;
   height: 200px;
@@ -208,6 +211,11 @@ div.photo1 {
 
 div.photo3 {
   background-image: url("../imgs/heart.jpg");
+}
+
+.location {
+  padding: 20px 30px;
+  filter: grayscale(100%);
 }
 
 /* inside footer*/

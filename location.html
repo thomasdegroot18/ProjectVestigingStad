@@ -3,84 +3,83 @@
 <head>
     <title>ETDS Template</title>
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/combine.css">
 </head>
-<body>
-    <header>
-        <section class="jumbotron headerImage">
-            <div class=>
-                <h1>ETDS 2020, Amsterdam</h1>
-            </div>   
-        </section>
-        <section class="container"> 
-            <div class="row navigationBar">
-                <nav class="col-sm-12 text-left"> 
-                    <p><a href="index.html">Overview</a></p>
-                    <p><a href="location.html">Location</a></p>
-                    <p><a href="timetable.html">Time Table</a></p>
-                    <p><a href="tournament.html">Tournament</a></p>
-                    <p><a href="registration.html">Registration</a></p>
-                    <p><a href="pics.html">Pics</a></p>
-                    <p><a href="results.html">Results</a></p>
-                    <p><a href="faq.html">FAQ</a></p>
-                    <p><a href="teamcaptains.html">Teamcaptains</a></p>
-                </nav> 
+<body onload="dayOrNight()" class="body">
+  <div class="container" id="container">
+    <div class="header" id="header">
+      <div class="amsterdam"><p id="amsterdam"> Amsterdam by <br/> </p> </div>
+
+      <div class="daynight">
+        <div class="container2">
+          <div class = "toggle-btn" id="toggle-btn" onclick='nightSwitch()'>
+            <div class = "inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="title"> ETDS AMSTERDAM 2020 </p>
+    <div class="navbar" id="navbar">
+        <ul clas="navlist" id="navlist">
+          <li class = "logo" id = "logo">
+              <div class="container2" id="btn-nav">
+                <div class = "toggle-btn" id="toggle-btn2" onclick='nightSwitch()'>
+                  <div class = "inner-circle" id="innercircle2"></div>
+              </div>
             </div>
-        </section>
-    </header>
-
-    <section class="container MainContainer">
-        <h1>Location</h1>
-        <p>
-            Sportcentrum Universum 
-            <br>Science Park 306, 1098 XH Amsterdam   
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.8036164702653!2d4.954769315778445!3d52.355846979783465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6094451b3ab91%3A0x86f7024a946221ca!2sSportcentrum+Universum!5e0!3m2!1sen!2snl!4v1547346466529" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-        <h1>How to get there</h1>
-        <h2>By car</h2>
-        <p> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus ac ex et tincidunt. Suspendisse volutpat, nulla eu lobortis mollis, dui ex facilisis urna, non faucibus purus nulla at velit. Fusce laoreet sagittis ex non semper. Donec fermentum ac diam id lacinia. Donec elementum felis id nisl pretium, in ornare nunc congue. Integer dignissim diam in maximus fringilla. Suspendisse vitae consectetur nisl. Praesent hendrerit ipsum pellentesque feugiat pretium.
-        </p>
-        <h2>By train - from Central Station Amsterdam </h2>
-        <p>
-            Vestibulum sit amet lacinia dui. Sed convallis nisi non ligula iaculis, ut lacinia eros scelerisque. In eu elementum magna, sit amet eleifend mauris. Morbi tincidunt tincidunt nulla eget facilisis. Nam laoreet ante at egestas tincidunt. Fusce eu justo tempus, condimentum enim sed, porttitor ante. Vestibulum consequat est id pretium porta. Proin non ipsum facilisis, suscipit nibh blandit, vulputate massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus ac neque ut sodales.
-            </p>
-        <h2>By Bus - from Amstel Station </h2>
-        <p>
-            Nunc quis blandit ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque in dictum massa, eget dictum quam. Phasellus cursus interdum felis, sit amet aliquet dolor tempus id. Praesent ipsum ex, consectetur vel ex cursus, tempus ullamcorper quam. Suspendisse id tempor est. Donec sed auctor diam. Sed venenatis, augue eu sagittis pellentesque, diam orci molestie erat, blandit finibus orci nibh eu nibh. Mauris semper mattis felis condimentum tempor. In tincidunt placerat sollicitudin. Pellentesque a porta nisi, id feugiat turpis. Sed accumsan dapibus efficitur. Quisque non est metus. Nullam a nisi a erat sollicitudin mattis. Curabitur malesuada erat non tellus imperdiet venenatis. Praesent et erat varius, feugiat urna quis, tempor sem.
-        </p>
-        <h2>By Tram</h2>
-        <p>
-            Curabitur sollicitudin consectetur nibh, vel porta urna dignissim eu. Sed euismod in arcu vitae lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget enim sed odio efficitur sodales nec eu mauris. Pellentesque quis posuere orci. Praesent at felis non ex dictum condimentum. Etiam lobortis bibendum diam vel dapibus. Vivamus urna magna, pulvinar ac congue quis, placerat sodales lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam porta facilisis tortor, sit amet efficitur turpis tempor id. Vivamus condimentum aliquam ipsum in lobortis. Proin convallis commodo neque, in tristique lectus elementum quis. Quisque tincidunt, mauris sit amet fermentum cursus, odio nunc vehicula lorem, ac mattis ipsum risus sit amet ipsum.
-        </p>
-
-        <h1>Parking</h1>
-        <p>
-            Donec gravida semper gravida. Fusce tempus nulla in dignissim fringilla. Praesent vel luctus ligula, nec dapibus ex. Nullam rhoncus rutrum urna eu faucibus. Curabitur fringilla enim fringilla suscipit tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam quam consectetur tellus viverra, a aliquet eros consectetur. Nunc egestas ut est ac mattis. Curabitur a nisl massa. Aliquam tristique at libero eget vehicula. Morbi non nisi accumsan, eleifend enim ac, elementum dui. Etiam euismod leo dapibus diam suscipit, sed rhoncus turpis lacinia. Nulla quis eleifend metus.
-        </p>
-    </section>
-
-
-<!-- The scripts go here. -->
-    <script src="scripts.js"></script>
-</body>
-
-<footer class="container">
-    <div class="row icons">
-        <ul>
-            <li><img src="imgs/facebook.svg" height="50"></li>
-            <li><img src="imgs/website.svg" height="50"></li>
-            <li><img src="imgs/placeholder.svg" height="50"></li>
-            <li><img src="imgs/mail.svg" height="50"></li>
+          </li>
+          <li class = "house current"> <div id="home">Home </div> </li>
+          <li class = "dropdown" onmouseenter="myEnterFunction()"> <a class="dropbtn">Information <a>
+            <div class="dropdown-content">
+              <a>Tournament</a>
+              <a>Location</a>
+              <a>Time-table</a>
+              <a>FAQ</a>
+          </div>
+          </li>
+          <li> <div id="registration">Registration </div></li>
+          <li> <div id="volunteer">Volunteer </div></li>
+          <li> <div id="merchandise">Merchandise </div></li>
         </ul>
-
     </div>
-    <div class="credits">
-        <p class="col-sm-6" style="text-align:left;"> &copy; 2019 AmsterDance</p>
-    </div>
-</footer>
+  <div class="main" id="main">
+    <h1>How to get there</h1>
+    <h2>By car</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus ac ex et tincidunt. Suspendisse volutpat, nulla eu lobortis mollis, dui ex facilisis urna, non faucibus purus nulla at velit. Fusce laoreet sagittis ex non semper. Donec fermentum ac diam id lacinia. Donec elementum felis id nisl pretium, in ornare nunc congue. Integer dignissim diam in maximus fringilla. Suspendisse vitae consectetur nisl. Praesent hendrerit ipsum pellentesque feugiat pretium.
+    </p>
+    <h2>By train - from Central Station Amsterdam </h2>
+    <p>
+        Vestibulum sit amet lacinia dui. Sed convallis nisi non ligula iaculis, ut lacinia eros scelerisque. In eu elementum magna, sit amet eleifend mauris. Morbi tincidunt tincidunt nulla eget facilisis. Nam laoreet ante at egestas tincidunt. Fusce eu justo tempus, condimentum enim sed, porttitor ante. Vestibulum consequat est id pretium porta. Proin non ipsum facilisis, suscipit nibh blandit, vulputate massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus ac neque ut sodales.
+        </p>
+    <h2>By Bus - from Amstel Station </h2>
+    <p>
+        Nunc quis blandit ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque in dictum massa, eget dictum quam. Phasellus cursus interdum felis, sit amet aliquet dolor tempus id. Praesent ipsum ex, consectetur vel ex cursus, tempus ullamcorper quam. Suspendisse id tempor est. Donec sed auctor diam. Sed venenatis, augue eu sagittis pellentesque, diam orci molestie erat, blandit finibus orci nibh eu nibh. Mauris semper mattis felis condimentum tempor. In tincidunt placerat sollicitudin. Pellentesque a porta nisi, id feugiat turpis. Sed accumsan dapibus efficitur. Quisque non est metus. Nullam a nisi a erat sollicitudin mattis. Curabitur malesuada erat non tellus imperdiet venenatis. Praesent et erat varius, feugiat urna quis, tempor sem.
+    </p>
+    <h2>By Tram</h2>
+    <p>
+        Curabitur sollicitudin consectetur nibh, vel porta urna dignissim eu. Sed euismod in arcu vitae lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget enim sed odio efficitur sodales nec eu mauris. Pellentesque quis posuere orci. Praesent at felis non ex dictum condimentum. Etiam lobortis bibendum diam vel dapibus. Vivamus urna magna, pulvinar ac congue quis, placerat sodales lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam porta facilisis tortor, sit amet efficitur turpis tempor id. Vivamus condimentum aliquam ipsum in lobortis. Proin convallis commodo neque, in tristique lectus elementum quis. Quisque tincidunt, mauris sit amet fermentum cursus, odio nunc vehicula lorem, ac mattis ipsum risus sit amet ipsum.
+    </p>
 
+    <h1>Location</h1>
+    <p>
+        Sportcentrum Universum
+        <br>Science Park 306, 1098 XH Amsterdam
+    </p>
+    <iframe class="location" id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.8036164702653!2d4.954769315778445!3d52.355846979783465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6094451b3ab91%3A0x86f7024a946221ca!2sSportcentrum+Universum!5e0!3m2!1sen!2snl!4v1547346466529" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <h1>Parking</h1>
+    <p>
+        Donec gravida semper gravida. Fusce tempus nulla in dignissim fringilla. Praesent vel luctus ligula, nec dapibus ex. Nullam rhoncus rutrum urna eu faucibus. Curabitur fringilla enim fringilla suscipit tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam quam consectetur tellus viverra, a aliquet eros consectetur. Nunc egestas ut est ac mattis. Curabitur a nisl massa. Aliquam tristique at libero eget vehicula. Morbi non nisi accumsan, eleifend enim ac, elementum dui. Etiam euismod leo dapibus diam suscipit, sed rhoncus turpis lacinia. Nulla quis eleifend metus.
+    </p>
+
+
+
+
+
+  </div>
+  <div class="footer" id="footer"> </div>
+  </div>
+  <script src="js/combine.js"></script>
+</body>
 </html>
-
