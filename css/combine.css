@@ -226,6 +226,26 @@ div.photo3 {
   filter: grayscale(100%);
 }
 
+.dashboard-btn {
+  padding: 20px 30px;
+}
+
+.dashboard-btn a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.night .dashboard-btn a{
+  background-color: #0310EA;
+  box-shadow: 0 0 5px 5px #0310EA;
+  padding: 20px;
+}
+
+.day .dashboard-btn a{
+  background-color: #c84537;
+  padding: 20px;
+}
+
 /* inside footer*/
 
 
