@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ETDS Template</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/combine.css">
+</head>
+<body onload="dayOrNight()" class="body">
+  <div class="container" id="container">
+    <div class="header" id="header">
+      <div class="amsterdam"><p id="amsterdam"> Amsterdam by <br/> </p> </div>
+
+      <div class="daynight">
+        <div class="container2">
+          <div class = "toggle-btn" id="toggle-btn" onclick='nightSwitch()'>
+            <div class = "inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="title"> ETDS AMSTERDAM 2020 </p>
+    <div class="navbar" id="navbar">
+        <ul clas="navlist" id="navlist">
+          <li class = "logo" id = "logo">
+              <div class="container2" id="btn-nav">
+                <div class = "toggle-btn" id="toggle-btn2" onclick='nightSwitch()'>
+                  <div class = "inner-circle" id="innercircle2"></div>
+              </div>
+            </div>
+          </li>
+          <li class = "house current"> <div id="home">Home </div> </li>
+          <li class = "dropdown" onmouseenter="myEnterFunction()"> <a class="dropbtn">Information <a>
+            <div class="dropdown-content">
+              <a href="tournament.html">Tournament</a>
+              <a href="program.html"> Program </a>
+              <a href="location.html">Location</a>
+              <a>FAQ</a>
+          </div>
+          </li>
+          <li> <div id="registration"> <a href="registration.html"> Registration </a> </div></li>
+          <li> <div id="volunteer"> <a href="volunteer.html"> Volunteer </a> </div></li>
+          <li> <div id="merchandise">Merchandise </div></li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+      <h1> Friday, 29-05-2020 </h1>
+      <table>
+        <tr>
+          <td> From 18:00 </td>
+          <td> Check-in </td>
+        </tr>
+        <tr>
+          <td> 18:00 - late </td>
+          <td> Social dancing </td>
+        </tr>
+        <tr>
+          <td> 20:00 - 00:30 </td>
+          <td> Blind date rounds </td>
+        </tr>
+        <tr>
+          <td> 01:00 </td>
+          <td> Blind date registration stop Saturday </td>
+        </tr>
+      </table>
+      <h1> Saturday, 30-05-2020 </h1>
+      <table>
+        <tr>
+          <td> 07:30 - 09:00 </td>
+          <td> Breakfast </td>
+        </tr>
+        <tr>
+          <td> 09:00 - 10.15 </td>
+          <td> Qualification round breitensport </td>
+        </tr>
+        <tr>
+          <td> 10:15 - 11:00 </td>
+          <td> Qualification round Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 11:00 - 11:30 </td>
+          <td> Team presentation </td>
+        </tr>
+        <tr>
+          <td> 11:30 - 13:00 </td>
+          <td> First round Breitensport </td>
+        </tr>
+        <tr>
+          <td> 11:30 - 13:30 </td>
+          <td> Lunch </td>
+        </tr>
+        <tr>
+          <td> 13:00 - 13:50 </td>
+          <td> First round Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 14:00 - 15:00 </td>
+          <td> 1/8 final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 15:00 - 15:30 </td>
+          <td> Quarter final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 15:30 - 15:45 </td>
+          <td> Semi final Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 15:45 - 16:15 </td>
+          <td> Semi final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 16:15 - 17:15 </td>
+          <td> Finals Breitensport </td>
+        </tr>
+        <tr>
+          <td> 17:15 - 17:45 </td>
+          <td> Finals Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 17:45 - 18:30 </td>
+          <td> Prices </td>
+        </tr>
+        <tr>
+          <td> 18:30 - 20:00 </td>
+          <td> Diner </td>
+        </tr>
+        <tr>
+          <td> 20:00 - late </td>
+          <td> Theme Party </td>
+        </tr>
+        <tr>
+          <td> 21:00 - 23:30 </td>
+          <td> Second blind date rounds </td>
+        </tr>
+        <tr>
+          <td> 00:00 </td>
+          <td> Blind date registration stop Sunday</td>
+        </tr>
+      </table>
+      <h1> Sunday, 31-05-2020 </h1>
+      <table>
+        <tr>
+          <td> 07:30 - 09:00 </td>
+          <td> Breakfast </td>
+        </tr>
+        <tr>
+          <td> 09:00 - 10.15 </td>
+          <td> Qualification round breitensport </td>
+        </tr>
+        <tr>
+          <td> 10:15 - 11:15 </td>
+          <td> Qualification round Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 11:15 - 12:45 </td>
+          <td> First round Breitensport </td>
+        </tr>
+        <tr>
+          <td> 11:30 - 13:30 </td>
+          <td> Lunch </td>
+        </tr>
+        <tr>
+          <td> 12:45 - 13:30 </td>
+          <td> First round Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 13:30 - 14:30 </td>
+          <td> 1/8 final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 14:30 - 15:15 </td>
+          <td> Quarter final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 15:15 - 15:30 </td>
+          <td> Semi final Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 15:30 - 16:00 </td>
+          <td> Semi final Breitensport </td>
+        </tr>
+        <tr>
+          <td> 16:00 - 17:00 </td>
+          <td> Finals Breitensport </td>
+        </tr>
+        <tr>
+          <td> 17:00 - 17:30 </td>
+          <td> Finals Open/ClosedD </td>
+        </tr>
+        <tr>
+          <td> 17:30 - 18:15 </td>
+          <td> Prices </td>
+        </tr>
+        <tr>
+          <td> 20:00 - 21:00 </td>
+          <td> Diner </td>
+        </tr>
+        <tr>
+          <td> 20:00 - late </td>
+          <td> Gala </td>
+        </tr>
+      </table>
+      <h1> Monday, 01-06-2020 </h1>
+      <table>
+        <tr>
+          <td>07:00-10:00</td>
+          <td>Breakfast and goodbye</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer" id="footer"> </div>
+  </div>
+  <script src="js/combine.js"></script>
+</body>
+</html>
