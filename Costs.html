@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ETDS Template</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/combine.css">
+</head>
+<body onload="dayOrNight()" class="body">
+  <div class="container" id="container">
+    <div class="header" id="header">
+      <div class="amsterdam"><p id="amsterdam"> Amsterdam by <br/> </p> </div>
+
+      <div class="daynight">
+        <div class="container2">
+          <div class = "toggle-btn" id="toggle-btn" onclick='nightSwitch()'>
+            <div class = "inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="title"> ETDS AMSTERDAM 2020 </p>
+    <div class="navbar" id="navbar">
+        <ul clas="navlist" id="navlist">
+          <li class = "logo" id = "logo">
+              <div class="container2" id="btn-nav">
+                <div class = "toggle-btn" id="toggle-btn2" onclick='nightSwitch()'>
+                  <div class = "inner-circle" id="innercircle2"></div>
+              </div>
+            </div>
+          </li>
+          <li class = "house current"> <div id="home">Home </div> </li>
+          <li class = "dropdown" onmouseenter="myEnterFunction()"> <a class="dropbtn">Information <a>
+            <div class="dropdown-content">
+              <a href="tournament.html">Tournament</a>
+              <a href="program.html"> Program </a>
+              <a href="location.html">Location</a>
+              <a>FAQ</a>
+          </div>
+          </li>
+          <li> <div id="registration"> <a href="registration.html"> Registration </a> </div></li>
+          <li> <div id="volunteer"> <a href="volunteer.html"> Volunteer </a> </div></li>
+          <li> <div id="merchandise">Merchandise </div></li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+      <h1>Costs </h1>
+      Below you'll find an indication of the prices for the ETDS Amsterdam in 2020.
+      The prices are not definite yet, and can be subject to change. Check our
+      website regulary for the latest prices.
+      Your teamcaptains will be informed shortly before the registation about the
+      definite price.   
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Student</td>
+          <td>72 euro</td>
+        </tr>
+        <tr>
+          <td>Non-Student</td>
+          <td>87 euro</td>
+        </tr>
+        <tr>
+          <td>Visitor</td>
+          <td>Not determined</td>
+        </tr>
+        <tr>
+          <td>Super-Volunteer</td>
+          <td>Free</td>
+        </tr>
+      </table>
+
+    </div>
+    <div class="footer" id="footer"> </div>
+  </div>
+  <script src="js/combine.js"></script>
+</body>
+</html>
