@@ -180,7 +180,6 @@ li.logo {
 
 .dropdown-content {
   background: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
   transition: 0.5s;
   z-index: 12;
@@ -189,8 +188,13 @@ li.logo {
   width: inherit;
 }
 
+.night .dropdown-content {
+    box-shadow: 0 0 7px 7px rgb(4,13, 14);
+}
+
 .dropdown-content a{
   display: block;
+  padding: 5px 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -204,7 +208,7 @@ p.navbar  {
 /* inside main elements */
 
 
-p{
+p {
   font-size: 16px;
   padding: 0 30px;
 }
@@ -318,7 +322,15 @@ body.day {
   background-color: #ffb3b3;
 }
 
+.day .dropdown-content a:hover {
+  background-color: #c84537;
+}
+
 /* Styling for night */
+
+.night .dropdown-content a:hover {
+  background-color: #0310EA;
+}
 
 body.night {
   background: url("../imgs/night_background3.jpg") no-repeat center center fixed;
@@ -380,17 +392,15 @@ body.night {
 
 .navbar li:hover {
   background: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
+}
+
+.night .navbar li:hover {
+ box-shadow: 0 0 7px 7px rgb(4,13, 14);
 }
 
 .navbar li:hover a {
   color: white;
-}
-
-body.night .info li:hover {
-  background: #15f4ee;
-  box-shadow: 0 0 3px 3px #15f4ee;
 }
 
 .navbar a {
@@ -402,10 +412,13 @@ body.night .info li:hover {
 }
 
 /* active page */
-.night .current {
+.current {
   background-color: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
+}
+
+.night .current {
+    box-shadow: 0 0 7px 7px rgb(4,13, 14);
 }
 
 /* neon-roze hex:  ff1493;
