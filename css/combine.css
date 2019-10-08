@@ -133,6 +133,10 @@ li.house, li.registration, li.volunteer, li.merchandise, div.dropdown {
   min-height: 50px;
 }
 
+a.house, a.registration, a.volunteer, a.merchandise {
+  height: 100%;
+}
+
 
 .dropdown-content a:visited {
   color: white;
