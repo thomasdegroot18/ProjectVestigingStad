@@ -103,9 +103,9 @@ function nightSwitch() {
   }
 
 function myEnterFunction() {
-  var navBtnSize = document.getElementById("information").offsetWidth;
+  var navBtnSize = document.getElementById("info").offsetWidth;
   console.log(navBtnSize);
-  document.getElementsByClassName('dropdown').style.width = navBtnSize + "px";
+  document.getElementById("dropdown-content").style.width = navBtnSize + "px";
 }
 
 /* Sun.js code from Triggertrap, original code on:
