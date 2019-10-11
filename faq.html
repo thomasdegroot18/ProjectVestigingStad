@@ -1,61 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>ETDS Template</title>
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <title>ETDS Template</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/combine.css">
 </head>
-<body>
-    <header>
-        <section class="jumbotron headerImage">
-            <div class=>
-                <h1>ETDS 2020, Amsterdam</h1>
-            </div>   
-        </section>
-        <section class="container"> 
-            <div class="row navigationBar">
-                <nav class="col-sm-12 text-left"> 
-                    <p><a href="index.html">Overview</a></p>
-                    <p><a href="location.html">Location</a></p>
-                    <p><a href="timetable.html">Time Table</a></p>
-                    <p><a href="tournament.html">Tournament</a></p>
-                    <p><a href="registration.html">Registration</a></p>
-                    <p><a href="pics.html">Pics</a></p>
-                    <p><a href="results.html">Results</a></p>
-                    <p><a href="faq.html">FAQ</a></p>
-                    <p><a href="teamcaptains.html">Teamcaptains</a></p>
-                </nav> 
+<body onload="dayOrNight()" class="body">
+  <div class="container" id="container">
+    <div class="header" id="header">
+      <div class="amsterdam"><p id="amsterdam"> Amsterdam by <br/> </p> </div>
+
+      <div class="daynight">
+        <div class="container2">
+          <div class = "toggle-btn" id="toggle-btn" onclick='nightSwitch()'>
+            <div class = "inner-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="title"> ETDS AMSTERDAM 2020 </p>
+    <div class="navbar" id="navbar">
+        <ul class="navlist" id="navlist">
+          <li class = "logo" id = "logo">
+              <div class="container2" id="btn-nav">
+                <div class = "toggle-btn" id="toggle-btn2" onclick='nightSwitch()'>
+                  <div class = "inner-circle" id="innercircle2"></div>
+              </div>
             </div>
-        </section>
-    </header>
-
-    <section class="container MainContainer">
-        <h1>Vis</h1>
-        <p> 
-           Vis. 
-        </p>
-    </section>
-
-
-<!-- The scripts go here. -->
-    <script src="scripts.js"></script>
-</body>
-
-<footer class="container">
-    <div class="row icons">
-        <ul>
-            <li><img src="imgs/facebook.svg" height="50"></li>
-            <li><img src="imgs/website.svg" height="50"></li>
-            <li><img src="imgs/placeholder.svg" height="50"></li>
-            <li><img src="imgs/mail.svg" height="50"></li>
+          </li>
+          <li class = "house"> <div id="home"> <a href="index.html">Home </a></div> </li>
+          <li class = "dropdown current" onmouseenter="myEnterFunction()" > <a class="dropbtn"> <div id="info">Information </div> </a>
+            <div class="dropdown-content" id="dropdown-content">
+              <a href="tournament.html">Tournament</a>
+              <a href="program.html"> Program </a>
+              <a href="location.html">Location</a>
+              <a href="costs.html">Costs</a>
+              <a href="packinglist.html">Packing List </a>
+              <a href="regulations.html">Regulations</a>
+              <a href="results.html">Results</a>
+              <a href="lostandfound.html">Lost & Found</a>
+              <a href="faq.html">FAQ</a>
+          </div>
+          </li>
+          <li class="registration"> <div id="registration"> <a href="registration.html"> Teampcaptains </br>/ Registration </a> </div></li>
+          <li class="volunteer"> <div id="volunteer"> <a href="volunteer.html"> Volunteer </a> </div></li>
+          <li class="merchandise"> <div id="merchandise"> <a href="merchandise.html"> Merchandise </a></div></li>
         </ul>
-
     </div>
-    <div class="credits">
-        <p class="col-sm-6" style="text-align:left;"> &copy; 2019 AmsterDance</p>
+    <div class="main" id="main">
+      <h1>FAQ</h1>
+      <p> Comming soon. </p>
     </div>
-</footer>
-
+    <div class="footer" id="footer"> </div>
+  </div>
+  <script src="js/combine.js"></script>
+</body>
 </html>
-

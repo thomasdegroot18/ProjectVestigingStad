@@ -111,6 +111,33 @@ div.daynight {
 
 /* inside navbar elements */
 
+.house, .registration, .volunteer, .merchandise, .dropbtn {
+    display: table;
+}
+
+a.dropbtn {
+  height: 100%;
+  display: table;
+}
+
+#home, #information, #registration, #volunteer, #merchandise, #info {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+li.house, li.registration, li.volunteer, li.merchandise, div.dropdown {
+  height: 100%;
+  min-height: 50px;
+}
+
+a.house, a.registration, a.volunteer, a.merchandise {
+  height: 100%;
+}
+
+
 .dropdown-content a:visited {
   color: white;
 }
@@ -119,7 +146,7 @@ a:visited {
   color: black;
 }
 
-ul {
+ul.navlist {
   list-style-type: none;
   display: flex;
   max-width: 1200px;
@@ -128,17 +155,17 @@ ul {
   overflow: hidden;
 }
 
+#navlist {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
+}
+
 li {
   flex: 1;
   text-transform: uppercase;
   font-weight: 900;
   min-height: 50px;
-}
-
-#home, #information, #registration, #volunteer, #merchandise {
-  align-self: center;
-  width: 100%;
-  text-align: center;
 }
 
 li a, .dropbtn {
@@ -157,35 +184,35 @@ li.logo {
 
 .dropdown-content {
   background: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
   transition: 0.5s;
   z-index: 12;
   display: none;
   position: absolute;
+  width: inherit;
 }
 
-li.dropdown {
-  display: inline-block;
-  padding: 5px 0;
+.night .dropdown-content {
+    box-shadow: 0 0 7px 7px rgb(4,13, 14);
 }
 
 .dropdown-content a{
   display: block;
+  padding: 5px 0;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
-/* inside main elements */
-
 p.navbar  {
   font-size: 20px;
 }
 
-p{
+/* inside main elements */
+
+
+p {
   font-size: 16px;
   padding: 0 30px;
 }
@@ -245,6 +272,23 @@ div.photo3 {
   background-color: #c84537;
   padding: 20px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border-bottom: solid black;
+  padding: 5px;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+tr:hover {background-color: #f5f5f5;}
 
 /* inside footer*/
 
@@ -314,7 +358,15 @@ body.day {
   background-color: #ffb3b3;
 }
 
+.day .dropdown-content a:hover {
+  background-color: #c84537;
+}
+
 /* Styling for night */
+
+.night .dropdown-content a:hover {
+  background-color: #0310EA;
+}
 
 body.night {
   background: url("../imgs/night_background3.jpg") no-repeat center center fixed;
@@ -342,8 +394,8 @@ body.night {
 }
 
 .night .navbar {
-  background-color: #0310EA;
-  box-shadow: 0 0 5px 5px #0310EA;
+  background-color: #15f4ee;
+  box-shadow: 0 0 5px 5px #15f4ee;
   z-index: 5;
 }
 
@@ -376,17 +428,15 @@ body.night {
 
 .navbar li:hover {
   background: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
+}
+
+.night .navbar li:hover {
+ box-shadow: 0 0 7px 7px rgb(4,13, 14);
 }
 
 .navbar li:hover a {
   color: white;
-}
-
-body.night .info li:hover {
-  background: #15f4ee;
-  box-shadow: 0 0 3px 3px #15f4ee;
 }
 
 .navbar a {
@@ -398,10 +448,13 @@ body.night .info li:hover {
 }
 
 /* active page */
-.night .current {
+.current {
   background-color: rgb(4,13, 14);
-  box-shadow: 0 0 7px 7px rgb(4,13, 14);
   color: white;
+}
+
+.night .current {
+    box-shadow: 0 0 7px 7px rgb(4,13, 14);
 }
 
 /* neon-roze hex:  ff1493;

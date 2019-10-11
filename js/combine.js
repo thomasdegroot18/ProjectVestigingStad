@@ -23,6 +23,8 @@ function sizePage() {
   var heightOfHeader = heightOfWindow / 5;
   var heightOfNavbar = heightOfWindow * 0.1;
   var heightOfFooter = heightOfWindow * 0.1;
+  var heightOfNavbar = Math.round(heightOfNavbar);
+  var heightOfFooter = Math.round(heightOfFooter);
   /* sizing min-height property of main so when content is less than rest of page,
   otherwise height auto will take over */
   var minHeightOfmain  = heightOfWindow - (heightOfHeader + heightOfNavbar + heightOfFooter);
@@ -103,9 +105,9 @@ function nightSwitch() {
   }
 
 function myEnterFunction() {
-  var navBtnSize = document.getElementById("information").offsetWidth;
+  var navBtnSize = document.getElementById("info").offsetWidth;
   console.log(navBtnSize);
-  document.getElementsByClassName('dropdown').style.width = navBtnSize + "px";
+  document.getElementById("dropdown-content").style.width = navBtnSize + "px";
 }
 
 /* Sun.js code from Triggertrap, original code on:
