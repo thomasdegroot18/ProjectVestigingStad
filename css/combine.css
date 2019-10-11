@@ -248,6 +248,21 @@ div.photo3 {
 
 /* inside footer*/
 
+div#location {
+  background-image: url("../imgs/location.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: auto;
+}
+
+div#mail {
+  background-image: url("../imgs/mail.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: contain;
+}
 
 /* Styling sticky header */
 
