@@ -292,20 +292,10 @@ tr:hover {background-color: #f5f5f5;}
 
 /* inside footer*/
 
-div#location {
-  background-image: url("../imgs/location.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: auto;
+img#location {
 }
 
-div#mail {
-  background-image: url("../imgs/mail.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: contain;
+img#mail {
 }
 
 /* Styling sticky header */
