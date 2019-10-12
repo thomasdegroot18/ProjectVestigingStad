@@ -46,6 +46,7 @@ body {
   width: 100%;
   min-height: 50px;
   box-sizing: border-box;
+  display: table;
 }
 
 /* inside header elements */
@@ -310,10 +311,41 @@ tr:hover {
 
 /* inside footer*/
 
-img#location {
+#location {
+  height: 80%;
+  margin-right: 20px;
+  float: right;
+}
+
+div.footer-elmnts {
+  height: 80%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 img#mail {
+  height: 80%;
+  padding-right: 20px;
+  float: right;
+}
+
+.night svg#location path {
+  fill: #15f4ee !important;
+}
+
+.night svg {
+  box-shadow: 0 0 7px 7px rgb(4, 13, 14);
+}
+
+div.footer-txt {
+  height: contain;
+  width: contain;
+}
+
+p.footer-txt {
+  float: right;
+  padding: 0;
+  padding-right: 5px;
 }
 
 /* Styling sticky header */
@@ -394,8 +426,8 @@ body.night {
 }
 
 .night h1 {
-  color: rgb(7, 33, 180);
-  text-shadow: 0 0 10px rgb(7, 33, 180);
+  color: #15f4ee;
+  text-shadow: 0 0 4px #15f4ee;
 }
 
 .night p {
