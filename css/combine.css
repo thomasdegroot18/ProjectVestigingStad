@@ -5,12 +5,12 @@
 
 html,
 body {
-   height: 100%;
-   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-   min-height:100%;
+  min-height: 100%;
 }
 
 /* 4 grote container divs header/navbar/main footer */
@@ -42,8 +42,8 @@ body {
 }
 
 .footer {
-  bottom:0;
-  width:100%;
+  bottom: 0;
+  width: 100%;
   min-height: 50px;
   box-sizing: border-box;
 }
@@ -111,8 +111,12 @@ div.daynight {
 
 /* inside navbar elements */
 
-.house, .registration, .volunteer, .merchandise, .dropbtn {
-    display: table;
+.house,
+.registration,
+.volunteer,
+.merchandise,
+.dropbtn {
+  display: table;
 }
 
 a.dropbtn {
@@ -120,7 +124,12 @@ a.dropbtn {
   display: table;
 }
 
-#home, #information, #registration, #volunteer, #merchandise, #info {
+#home,
+#information,
+#registration,
+#volunteer,
+#merchandise,
+#info {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -128,15 +137,21 @@ a.dropbtn {
   vertical-align: middle;
 }
 
-li.house, li.registration, li.volunteer, li.merchandise, div.dropdown {
+li.house,
+li.registration,
+li.volunteer,
+li.merchandise,
+div.dropdown {
   height: 100%;
   min-height: 50px;
 }
 
-a.house, a.registration, a.volunteer, a.merchandise {
+a.house,
+a.registration,
+a.volunteer,
+a.merchandise {
   height: 100%;
 }
-
 
 .dropdown-content a:visited {
   color: white;
@@ -168,7 +183,8 @@ li {
   min-height: 50px;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -183,7 +199,7 @@ li.logo {
 }
 
 .dropdown-content {
-  background: rgb(4,13, 14);
+  background: rgb(4, 13, 14);
   color: white;
   transition: 0.5s;
   z-index: 12;
@@ -193,10 +209,10 @@ li.logo {
 }
 
 .night .dropdown-content {
-    box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4, 13, 14);
 }
 
-.dropdown-content a{
+.dropdown-content a {
   display: block;
   padding: 5px 0;
 }
@@ -205,12 +221,11 @@ li.logo {
   display: block;
 }
 
-p.navbar  {
+p.navbar {
   font-size: 20px;
 }
 
 /* inside main elements */
-
 
 p {
   font-size: 16px;
@@ -262,13 +277,13 @@ div.photo3 {
   font-weight: bold;
 }
 
-.night .dashboard-btn a{
-  background-color: #0310EA;
-  box-shadow: 0 0 5px 5px #0310EA;
+.night .dashboard-btn a {
+  background-color: #0310ea;
+  box-shadow: 0 0 5px 5px #0310ea;
   padding: 20px;
 }
 
-.day .dashboard-btn a{
+.day .dashboard-btn a {
   background-color: #c84537;
   padding: 20px;
 }
@@ -278,7 +293,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   border-bottom: solid black;
   padding: 5px;
 }
@@ -288,10 +304,11 @@ th {
   color: white;
 }
 
-tr:hover {background-color: #f5f5f5;}
+tr:hover {
+  background-color: #f5f5f5;
+}
 
 /* inside footer*/
-
 
 /* Styling sticky header */
 
@@ -335,7 +352,8 @@ body.day {
   color: #c84537;
 }
 
-.day .navbar, .day .footer {
+.day .navbar,
+.day .footer {
   background-color: #c84537;
 }
 
@@ -350,7 +368,7 @@ body.day {
 /* Styling for night */
 
 .night .dropdown-content a:hover {
-  background-color: #0310EA;
+  background-color: #0310ea;
 }
 
 body.night {
@@ -360,13 +378,13 @@ body.night {
 
 .night .header {
   background-image: url("../imgs/skyline_black_blue_small.png");
-  background-color: rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
 }
 
 .night .title {
   color: #15f4ee;
   text-shadow: 0 0 30px #15f4ee;
-  background-color: rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
 }
 
 .night h1 {
@@ -385,23 +403,24 @@ body.night {
 }
 
 .night .footer {
-  background-color: rgb(4,13, 14);
-  box-shadow: 0 0 5px 5px rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
+  box-shadow: 0 0 5px 5px rgb(4, 13, 14);
 }
 
 .night .main {
-  background-color: rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
   color: #15f4ee;
-  box-shadow: 0 6px 5px 5px rgb(4,13, 14);
+  box-shadow: inset 0 10px 5px -5px #15f4ee, 10px 0 5px -5px rgb(4, 13, 14),
+    -10px 0 5px -5px rgb(4, 13, 14);
 }
 
 .night #toggle-btn2 {
   box-shadow: 0 0 5px black;
-  background-color: rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
 }
 
 .night #innercircle2 {
-    background-image: url("../imgs/moon_blue.jpg");
+  background-image: url("../imgs/moon_blue.jpg");
 }
 
 .night .amsterdam {
@@ -412,12 +431,12 @@ body.night {
 /* navbar hover */
 
 .navbar li:hover {
-  background: rgb(4,13, 14);
+  background: rgb(4, 13, 14);
   color: white;
 }
 
 .night .navbar li:hover {
- box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4, 13, 14);
 }
 
 .navbar li:hover a {
@@ -428,18 +447,18 @@ body.night {
   color: black;
 }
 
-.current a{
+.current a {
   color: white;
 }
 
 /* active page */
 .current {
-  background-color: rgb(4,13, 14);
+  background-color: rgb(4, 13, 14);
   color: white;
 }
 
 .night .current {
-    box-shadow: 0 0 7px 7px rgb(4,13, 14);
+  box-shadow: 0 0 7px 7px rgb(4, 13, 14);
 }
 
 /* neon-roze hex:  ff1493;
