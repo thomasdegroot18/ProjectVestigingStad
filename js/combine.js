@@ -21,13 +21,13 @@ function sizePage() {
   //Getting the height of the window and use it to define the other heights.
   var heightOfWindow = window.innerHeight;
   var heightOfHeader = heightOfWindow / 5;
-  var heightOfNavbar = heightOfWindow * 0.1;
-  var heightOfFooter = heightOfWindow * 0.1;
-  var heightOfNavbar = Math.round(heightOfNavbar);
-  var heightOfFooter = Math.round(heightOfFooter);
+  var heightOfNavbarNotRound = heightOfWindow * 0.1;
+  var heightOfFooterNotRound = heightOfWindow * 0.1;
+  var heightOfNavbar = Math.round(heightOfNavbarNotRound);
+  var heightOfFooter = Math.round(heightOfFooterNotRound);
   /* sizing min-height property of main so when content is less than rest of page,
   otherwise height auto will take over */
-  var minHeightOfmain  = heightOfWindow - (heightOfHeader + heightOfNavbar + heightOfFooter);
+  var minHeightOfmain  = heightOfWindow - (heightOfHeader + heightOfNavbar + heightOfFooter + 78);
   // Return the height to elements
   document.getElementById("header").style.height = heightOfHeader + "px";
   document.getElementById("navbar").style.height = heightOfNavbar + "px";
