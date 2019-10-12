@@ -320,13 +320,11 @@ tr:hover {
 
 div.footer-elmnts {
   height: 80%;
-  display: table-cell;
-  vertical-align: middle;
 }
 
-img#mail {
+#mail {
   height: 80%;
-  padding-right: 20px;
+  margin-right: 20px;
   float: right;
 }
 
@@ -334,19 +332,28 @@ img#mail {
   fill: #15f4ee !important;
 }
 
-.night svg {
-  box-shadow: 0 0 7px 7px rgb(4, 13, 14);
+.night svg#mail path {
+  fill: #15f4ee !important;
 }
 
-div.footer-txt {
-  height: contain;
-  width: contain;
+.night svg {
+  box-shadow: 0 0 20px 0px #15f4ee;
+  box-sizing: content-box;
+  border-radius: 50%;
 }
 
 p.footer-txt {
   float: right;
   padding: 0;
-  padding-right: 5px;
+  padding-right: 15px;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  font-size: 12px;
+}
+
+.night p.footer-txt {
+  color: #15f4ee;
 }
 
 /* Styling sticky header */
