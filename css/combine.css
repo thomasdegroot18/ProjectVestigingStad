@@ -339,7 +339,7 @@ th {
 
 /* inside footer*/
 
-#location {
+#location, #mail, #facebook {
   margin-top: 1vh;
   margin-right: 20px;
   float: right;
@@ -349,17 +349,15 @@ div.footer-elmnts {
   height: 80%;
 }
 
-#mail {
-  margin-top: 1vh;
-  margin-right: 20px;
-  float: right;
-}
-
 .night svg#location path {
   fill: #15f4ee !important;
 }
 
 .night svg#mail path {
+  fill: #15f4ee !important;
+}
+
+.night svg#facebook path {
   fill: #15f4ee !important;
 }
 
