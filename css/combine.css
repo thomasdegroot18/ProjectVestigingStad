@@ -190,6 +190,16 @@ li {
   min-height: 50px;
 }
 
+#MenuList {
+  text-transform: none;
+  font-weight: 10;
+  min-height: 0px;
+}
+
+#MenuListUL {
+list-style-type: none;
+}
+
 li a,
 .dropbtn {
   display: inline-block;
