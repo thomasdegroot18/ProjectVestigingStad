@@ -79,10 +79,11 @@ https://github.com/Triggertrap/sun-js */
   const sessionValue = sessionStorage.getItem("Day?");
 
   if (sessionValue === null) {
+
     if ((current < sunset && current > sunrise) ) {
       isNightTime = false;
       nightSwitch();
-    } else if ((current >= sunset && current <= sunrise) ) {
+    } else {
       isNightTime = true;
       nightSwitch();
     }
