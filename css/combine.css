@@ -321,8 +321,20 @@ th {
   color: white;
 }
 
-tr:hover {
+.night td {
+  text-shadow: 0 0 4px #15f4ee;
+}
+
+.night th {
+  text-shadow: 0 0 3px white;
+}
+
+.day tr:hover {
   background-color: #f5f5f5;
+}
+
+.night tr:hover {
+  background-color: #75787b;
 }
 
 /* inside footer*/
