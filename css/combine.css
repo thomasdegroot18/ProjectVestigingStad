@@ -349,6 +349,11 @@ div.footer-elmnts {
   height: 80%;
 }
 
+.footer-elmnts a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .night svg#location path {
   fill: #15f4ee !important;
 }
