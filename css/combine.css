@@ -340,7 +340,7 @@ th {
 /* inside footer*/
 
 #location {
-  height: 80%;
+  margin-top: 1vh;
   margin-right: 20px;
   float: right;
 }
@@ -350,7 +350,7 @@ div.footer-elmnts {
 }
 
 #mail {
-  height: 80%;
+  margin-top: 1vh;
   margin-right: 20px;
   float: right;
 }
