@@ -195,6 +195,7 @@ li {
   text-decoration: none;
   font-weight: 10;
   min-height: 0px;
+  margin-left: 45px;
 }
 
 #MenuList {
@@ -475,6 +476,10 @@ body.night {
 
 .night h1 {
   color: #15f4ee;
+  text-shadow: 0 0 4px #15f4ee;
+}
+
+.night h2 {
   text-shadow: 0 0 4px #15f4ee;
 }
 
