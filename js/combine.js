@@ -76,14 +76,27 @@ https://github.com/Triggertrap/sun-js */
   var sunset = new Date().sunset(52.3559042,4.9546308);
   var sunrise = new Date().sunrise(52.3559042,4.9546308);
   var current = new Date();
+  const sessionValue = sessionStorage.getItem("Day?");
 
-  if (current < sunset && current > sunrise) {
-    isNightTime = false;
-    nightSwitch();
+  if (sessionValue === null) {
+    if ((current < sunset && current > sunrise) ) {
+      isNightTime = false;
+      nightSwitch();
+    } else if ((current >= sunset && current <= sunrise) ) {
+      isNightTime = true;
+      nightSwitch();
+    }
   } else {
-    isNightTime = true;
-    nightSwitch();
+    if ( sessionValue === "true") {
+      isNightTime = false;
+      nightSwitch();
+    } else  {
+      isNightTime = true;
+      nightSwitch();
+    }
   }
+
+
 }
 
 // Function that switches class for day or night after clicking the slidebutton.
@@ -94,19 +107,20 @@ function nightSwitch() {
       document.getElementById("toggle-btn2").classList.add("active");
       document.body.classList.remove('day');
       document.body.classList.add('night');
+      sessionStorage.setItem("Day?",false);
   } else {
       isNightTime = true;
       document.getElementById("toggle-btn").classList.remove("active");
       document.getElementById("toggle-btn2").classList.remove("active");
       document.body.classList.remove('night');
       document.body.classList.add('day');
+      sessionStorage.setItem("Day?",true);
     }
 
   }
 
 function myEnterFunction() {
   var navBtnSize = document.getElementById("info").offsetWidth;
-  console.log(navBtnSize);
   document.getElementById("dropdown-content").style.width = navBtnSize + "px";
 }
 
