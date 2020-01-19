@@ -248,6 +248,9 @@ h2 {
   padding: 20px 30px;
 }
 
+h3 {
+  padding: 0 30px;
+}
 div.photocontainer {
   width: 33.3%;
   height: 200px;
@@ -347,6 +350,16 @@ th {
 
 #MenuListUL {
 list-style-type: none;
+}
+
+#regsListUL {
+  padding: 0 55px
+}
+
+#regsList {
+  text-transform: none;
+  font-weight: 10;
+  min-height: 0px;
 }
 
 #maillink {
@@ -491,7 +504,26 @@ body.night {
   text-shadow: 0 0 4px #15f4ee;
 }
 
+.night h3 {
+  text-shadow: 0 0 4px #15f4ee;
+}
+
 .night p {
+  text-shadow: 0 0 4px #15f4ee;
+}
+
+.night #MenuList {
+  text-shadow: 0 0 4px #15f4ee;
+}
+
+.night #MenuListUL {
+  text-shadow: 0 0 4px #15f4ee;
+}
+.night #regsList {
+  text-shadow: 0 0 4px #15f4ee;
+}
+
+.night #regsListUL {
   text-shadow: 0 0 4px #15f4ee;
 }
 
