@@ -280,6 +280,8 @@ div.photo3 {
 
 .dashboard-btn {
   padding: 20px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .dashboard-btn a {
